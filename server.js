@@ -41,8 +41,4 @@ app.get('/apiPerguntas/questao/:id', function(req, res){
 //     res.json(List)
 // })
 
-app.get('/apiPerguntas/address', function(req, res){
-    res.json(data.map(dat => dat.address))
-})
-
 app.listen(3000)
