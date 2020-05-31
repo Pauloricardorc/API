@@ -41,4 +41,4 @@ app.get('/apiPerguntas/questao/:id', function(req, res){
 //     res.json(List)
 // })
 
-app.listen(3000)
+app.listen(process.env.PORT || 3000)
