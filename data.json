@@ -1,33 +1,38 @@
 [
     {
-        "id": 0,
-        "pergunta": "(UFRN) Todos os vírus são constituídos por ?",
-        "questao":{
-            "quest1": "Intracelular obrigatório.",
-            "quest2": "Bactericida.",
-            "quest3": "Bacteriose.",
-            "quest4": "Bacteriófago."
-        },
-        "value": "1.1"
-    },
-    {
-        "id": 1,
-        "pergunta": "Como se denomina o tipo de vírus que ataca bactérias? ",
-        "value": "1.2"
-    },
-    {
-        "id": 2,
-        "pergunta": "O HIV é um exemplo de vírus envelopado. Marque a alternativa que explica corretamente essa definição.",
-        "value": "1.3"
-    },
-    {
-        "id": 3,
-        "pergunta": "Dentre os grupos de doenças citados abaixo, marque a alternativa na qual todas elas sejam causadas por vírus.",
-        "value": "1.3"
-    },
-    {
-        "id": 4,
-        "pergunta": "O processo de multiplicação viral pode finalizar-se com a lise ou não da célula. Quando ocorre o rompimento da célula e a dispersão dos vírus, denominamos o ciclo de:",
-        "value": "1.3"
+        "Pergunta":
+        [
+            {
+                "id": 0,
+                "pergunta": "(UFRN) Todos os vírus são constituídos por ?",
+                "questao":{
+                    "quest1": "Intracelular obrigatório.",
+                    "quest2": "Bactericida.",
+                    "quest3": "Bacteriose.",
+                    "quest4": "Bacteriófago."
+                },
+                "value": "1.1"
+            },
+            {
+                "id": 1,
+                "pergunta": "Como se denomina o tipo de vírus que ataca bactérias? ",
+                "value": "1.2"
+            },
+            {
+                "id": 2,
+                "pergunta": "O HIV é um exemplo de vírus envelopado. Marque a alternativa que explica corretamente essa definição.",
+                "value": "1.3"
+            },
+            {
+                "id": 3,
+                "pergunta": "Dentre os grupos de doenças citados abaixo, marque a alternativa na qual todas elas sejam causadas por vírus.",
+                "value": "1.4"
+            },
+            {
+                "id": 4,
+                "pergunta": "O processo de multiplicação viral pode finalizar-se com a lise ou não da célula. Quando ocorre o rompimento da célula e a dispersão dos vírus, denominamos o ciclo de:",
+                "value": "1.5"
+            }
+        ]
     }
 ]

@@ -6,25 +6,25 @@ app.use(express.json())
 
 app.get('/apiPerguntas', function(req, res){
 
-    res.json(data)
+    res.json(data.map(re => re.Pergunta))
 
-})
-
-app.get('/apiPerguntas/:id', function(req, res){
-    const { id } = req.params
-    const Listid = data.find(cli => cli.id == id)
-
-    res.json(Listid)
 })
 
 app.get('/apiPerguntas/pergunta/:id', function(req, res){
-    const { id }  = req.params
-    const cliente  = data.find(cli => cli.id == id)
+    const { id } = req.params
 
-    if(!cliente) return res.status(204).json()
+    const result = data.map(res => res.Pergunta[id])
 
-    res.json(cliente.pergunta)
+    res.json(result)
 })
+
+app.get('/apiPerguntas/perguntas', function(req, res){
+
+    const cliente  = data.find(cli => cli.Pergunta)
+
+    res.json(cliente.Pergunta.map(rep => rep.pergunta))
+})
+
 app.get('/apiPerguntas/questao/:id', function(req, res){
     const { id }  = req.params
     const cliente  = data.find(cli => cli.id == id)
