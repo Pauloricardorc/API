@@ -5,7 +5,6 @@ const data = require('./data.json')
 app.use(express.json())
 
 app.get('/apiPerguntas', function(req, res){
-
     res.json(data)
 })
 
@@ -19,32 +18,23 @@ app.get('/apiPerguntas', function(req, res){
 // })
 
 app.get('/apiPerguntas/pergunt', function(req, res){
-    
-
-    res.json(data.Pergunta)
+    const params = req.query;
+    const respques = data.Pergunta.map(se => se.value == params)
+    res.json(respques)
 })
 
 app.get('/apiPerguntas/perguntas', function(req, res){
-    const respe = data.Pergunta.map(map => map.pergunta)
+    const respe = data.Pergunta.map(map => map.tema)
 
     res.json(respe)
 })
 
 
-app.get('/apiPerguntas/questao/:id', function(req, res){
-    const { id }  = req.params
-    const cliente  = data.find(cli => cli.id == id)
+app.get('/apiPerguntas/questao/', function(req, res){
+    const cliente = data.Pergunta.map(te => te.questao)
 
-    if(!cliente) return res.status(204).json()
-
-    res.json(cliente.questao)
+    res.json(cliente)
 })
 
-// app.get('/apiPerguntas/:id', function(req, res){
-//     const { id } = req.params
-//     const List = data.find(pa => pa.id == id)
-
-//     res.json(List)
-// })
 
 app.listen(process.env.PORT || 3000)
