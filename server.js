@@ -20,6 +20,11 @@ app.get('/apiPerguntas/quiz/:id', function(req, res){
     const quizid = data.quiz[1].find(ma => ma.id == id)
     res.json(quizid)
 })
+app.get('/apiPerguntas/quiz/questao/:id', function(req, res){
+    const { id } = req.params
+    const quizid = data.quiz[1].find(ma => ma.id == id)
+    res.json(quizid.questao)
+})
 
 
 // app.get('/apiPerguntas/pergunta/:id', function(req, res){
