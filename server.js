@@ -8,6 +8,12 @@ app.get('/apiPerguntas', function(req, res){
     res.json(data)
 })
 
+app.get('/apiPerguntas/quiz/primeiraTela', function(req, res){
+    const client = data.Quiz.map(ma => ma.PrimeiraTela)
+    
+    res.json(client)
+})
+
 app.get('/apiPerguntas/questao/', function(req, res){
     const client = data.Quiz.map(ma => ma.PrimeiraTela.map(pe => pe.Questao))
     
