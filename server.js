@@ -16,22 +16,15 @@ app.get('/apiPerguntas', function(req, res){
 
 //     res.json(resdata)
 // })
-
-app.get('/apiPerguntas/pergunt', function(req, res){
-    const params = req.query;
-    const respques = data.Pergunta.map(se => se.value == params)
-    res.json(respques)
-})
-
 app.get('/apiPerguntas/perguntas', function(req, res){
-    const respe = data.Pergunta.map(map => map.tema)
+    const respe = data.quiz1.map(map => map.tema)
 
     res.json(respe)
 })
 
 
 app.get('/apiPerguntas/questao/', function(req, res){
-    const cliente = data.Pergunta.map(te => te.questao)
+    const cliente = data.quiz.quiz1.map(re => re.questao)
 
     res.json(cliente)
 })
