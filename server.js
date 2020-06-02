@@ -8,33 +8,33 @@ app.get('/apiPerguntas', function(req, res){
     res.json(data)
 })
 
-app.get('/apiPerguntas/quiz/primeiraTela', function(req, res){
-    const client = data.Quiz.map(ma => ma.PrimeiraTela)
+
+// app.get('/apiPerguntas/pergunta/:id', function(req, res){
+//     const { id } = req.params
     
-    res.json(client)
+//     const resdata = data.Pergunta()
+
+//     res.json(resdata)
+// })
+
+app.get('/apiPerguntas/pergunt', function(req, res){
+    const params = req.query;
+    const respques = data.Pergunta.map(se => se.value == params)
+    res.json(respques)
 })
+
+app.get('/apiPerguntas/perguntas', function(req, res){
+    const respe = data.Pergunta.map(map => map.tema)
+
+    res.json(respe)
+})
+
 
 app.get('/apiPerguntas/questao/', function(req, res){
-    const client = data.Quiz.map(ma => ma.PrimeiraTela.map(pe => pe.Questao))
-    
-    res.json(client)
+    const cliente = data.Pergunta.map(te => te.questao)
+
+    res.json(cliente)
 })
 
-app.get('/apiPerguntas/questao/:id', function(req, res){
-    const { id } = req.params
-    const client = data.Quiz.map(ma => ma.PrimeiraTela.map(pe => pe.Questao[id]))
-    // console.log(client[id])
-    res.json(client)
-})
 
 app.listen(process.env.PORT || 3000)
-
-
-
-    // app.get('/apiPerguntas/pergunta/:id', function(req, res){
-    //     const { id } = req.params
-        
-    //     const resdata = data.Pergunta()
-    
-    //     res.json(resdata)
-    // })

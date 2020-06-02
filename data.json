@@ -1,39 +1,32 @@
 {
-    "Quiz":
+    
+    "Pergunta":
     [
         {
-            "PrimeiraTela": 
-            [
-                {
-                    "Questao": [
-                        {
-                            "id": 0,
-                            "pergunta": "(UFRN) Todos os vírus são constituídos por ?",
-                            "value": "1.1"
-                        },
-                        {
-                            "id":1,
-                            "alternativa": "Intracelular obrigatório1.",
-                            "value": "1.2"
-                        },
-                        {
-                            "id": 2,
-                            "alternativa":"Intracelular obrigatório2.",
-                            "value": "1.3"
-                        },
-                        {
-                            "id":3,
-                            "alternativa": "Intracelular obrigatório3.",
-                            "value": "1.4"
-                        },
-                        {
-                            "id": 4,
-                            "alternativa":"Intracelular obrigatório4.",
-                            "value": "1.5"
-                        }
-                    ]
-                }
-            ]
+            "id": 0,
+            "tema": "(UFRN) Todos os vírus são constituídos por ?",
+            "questao":  "Intracelular obrigatório.",
+            "value": "1.1"
+        },
+        {
+            "id": 1,
+            "questao": "Intracelular obrigatório.",
+            "value": "1.2"
+        },
+        {
+            "id": 2,
+            "questao": "Intracelular obrigatório.",
+            "value": "1.3"
+        },
+        {
+            "id": 3,
+            "questao": "Intracelular obrigatório.",
+            "value": "1.4"
+        },
+        {
+            "id": 4,
+            "questao": "Intracelular obrigatório.",
+            "value": "1.5"
         }
     ]
 }
